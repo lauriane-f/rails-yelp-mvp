@@ -1,5 +1,7 @@
 {
   "name": "rails-yelp-mvp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
 }
