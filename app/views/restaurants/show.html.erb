@@ -1,0 +1,23 @@
+<div class='container col-6 offset-3'>
+
+<div class='restaurant-infos mt-5'>
+    <h2> <%= @restaurant.name %> </h2>
+    <p> <%= @restaurant.address %> </p>
+
+  <hr>
+
+  <h3>Reviews</h3>
+
+  <% @restaurant.reviews.each do |review| %>
+    <div>
+      <ul>
+      <li>Review: <%=review.content%></li>
+      <li><%=review.rating%> ⭐</li>
+      </ul>
+    </div>
+    <% end %>
+</div>
+
+<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
+
+</div>

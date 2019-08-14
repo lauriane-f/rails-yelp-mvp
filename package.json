@@ -2,6 +2,6 @@
   "name": "rails-yelp-mvp",
   "private": true,
   "dependencies": {
-    "boostrap": "^2.0.0"
+    "bootstrap": "^4.3.1"
   }
 }

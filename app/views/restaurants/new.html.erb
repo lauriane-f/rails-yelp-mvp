@@ -1,0 +1,14 @@
+<div class='container col-6 offset-3'>
+
+<h1 class='mt-5 text-center'>Give me details about your finding :</h1>
+
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category, collection: Restaurant::CATEGORY %>
+  <div class="d-flex justify-content-center">
+  <%= f.button :submit, class:"btn-primary mt-3"  %>
+  </div>
+<% end %>
+
+</div>

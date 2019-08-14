@@ -1,0 +1,13 @@
+<div class='container col-6 offset-3'>
+
+<h1 class='mt-5 text-center'>My list of restaurants</h1>
+<% @restaurants.each do |restaurant| %>
+  <h3 class= mt-3><%= restaurant.name %></h3>
+  <p><%= restaurant.address %></p>
+  <%= link_to 'See details', restaurant_path(restaurant), class: "btn btn-primary" %>
+<% end %>
+
+<hr>
+<%= link_to 'Add a new restaurant', new_restaurant_path, class: "btn btn-primary mt-3 mx-auto" %>
+
+</div>
